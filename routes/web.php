@@ -17,4 +17,5 @@ Route::get('/', function () {
     return view('welcome');
     //demarrage du projet
     //demarre
+    //demarre
 });
