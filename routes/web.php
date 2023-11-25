@@ -15,7 +15,10 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
-    //demarrage du projet
-    //demarre
-    //demarre
+    
+});
+
+Route::get('/accueil', function () {
+    return view('accueil');
+    
 });
