@@ -1,5 +1,5 @@
 @extends('base')
-@section('body')
+@section('content')
 
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="hero d-flex align-items-center">
@@ -67,6 +67,7 @@
 
     <!-- ======= Features Section ======= -->
     <section id="features" class="features">
+      
       <h6 id="qui_sommes-nous"></h6>
       <div class="container">
 

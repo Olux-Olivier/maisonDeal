@@ -69,7 +69,13 @@
 
             </div>
         </header><!-- End Header -->
-        @yield('body')
+
+
+        <!-- Content -->
+        @yield('content')
+        <!-- End Content-->
+
+
         <!-- ======= Footer ======= -->
         <footer id="footer" class="footer">
 
