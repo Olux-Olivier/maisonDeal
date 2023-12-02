@@ -51,10 +51,8 @@
             <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
             <nav id="navbar" class="navbar">
                 <ul>
-                <li><a href="index.html" class="active">Accueil</a></li>
-                <li><a href="about.html">Apropos</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="abonnement.html">Abonnements</a></li>
+                <li><a href="{{ route('accueil') }}" class="active">Accueil</a></li>
+                <li><a href="{{ route('abonnements') }}">Abonnements</a></li>
                 <li class="dropdown"><a href="#"><span>Collections</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
                     <ul>
                     <li><a href="#">Toutes les collections</a></li>
