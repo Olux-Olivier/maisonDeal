@@ -21,8 +21,9 @@ use App\Http\Controllers\PagesController;
 
 //NOUVELLES ROUTES
 
-Route::get('/', [PagesController::class, 'index'])->name('accueil');
+Route::get('/', [PagesController::class, 'index'])->name('index');
 Route::get('/abonnements', [PagesController::class, 'abonnements'])->name('abonnements');
-
+Route::get('/contact', [PagesController::class, 'contact'])->name('contact');
+Route::get('/connexion', [PagesController::class, 'connexion'])->name('connexion');
 #LOGIN
 

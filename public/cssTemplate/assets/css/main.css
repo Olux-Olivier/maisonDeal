@@ -352,7 +352,7 @@ section {
   .navbar .active,
   .navbar .active:focus,
   .navbar li:hover>a {
-    color: #fff;
+    color: #fff;  
   }
 
   .navbar .get-a-quote,

@@ -51,17 +51,22 @@
             <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
             <nav id="navbar" class="navbar">
                 <ul>
-                <li><a href="{{ route('accueil') }}" class="active">Accueil</a></li>
-                <li><a href="{{ route('abonnements') }}">Abonnements</a></li>
+                
+                <!-- Declaration de la variable active -->
+                <?php  $active = 'text-white' ?>
+                <!-- fin  -->
+
+                <li><a href="{{ route('index') }}" class="{{ request()->routeIs('index') ? $active : ' ' }}">Accueil</a></li>
+                <li><a href="{{ route('abonnements') }}" class="{{ request()->routeIs('abonnements') ? $active : ' ' }}">Abonnements</a></li>
                 <li class="dropdown"><a href="#"><span>Collections</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
                     <ul>
-                    <li><a href="#">Toutes les collections</a></li>
+                    <li><a href="#">Toutes les collections</a></li>     
                     <li><a href="#">Location</a></li>
                     <li><a href="#">Vente</a></li>
                     </ul>
                 </li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a class="get-a-quote" href="connexion.html">Se connecter</a></li>
+                <li><a href="{{ route('contact') }}" class="{{ request()->routeIs('contact') ? $active : ' ' }}">Contact</a></li>
+                <li><a class="get-a-quote" href="{{ route('connexion') }}">Se connecter</a></li>
                 </ul>
             </nav><!-- .navbar -->
 
