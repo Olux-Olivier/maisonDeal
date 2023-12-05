@@ -21,9 +21,11 @@ use App\Http\Controllers\PagesController;
 
 //NOUVELLES ROUTES
 
-Route::get('/', [PagesController::class, 'index'])->name('index');
-Route::get('/abonnements', [PagesController::class, 'abonnements'])->name('abonnements');
-Route::get('/contact', [PagesController::class, 'contact'])->name('contact');
-Route::get('/connexion', [PagesController::class, 'connexion'])->name('connexion');
-#LOGIN
+Route::controller(PagesController::class)->group(function(){
+    Route::get('/', 'index')->name('index');
+    Route::get('/abonnements', 'abonnements')->name('abonnements');
+    Route::get('/contact', 'contact')->name('contact');
+    Route::get('/connexion', 'connexion')->name('connexion');
+});
 
+#LOGIN
