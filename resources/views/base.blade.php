@@ -5,7 +5,8 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>nDeal/accueil</title>
+  <title>@yield('title')</title>
+  
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -41,10 +42,10 @@
         <header id="header" class="header d-flex align-items-center fixed-top">
             <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
 
-            <a href="index.html" class="logo d-flex align-items-center">
+            <a href="{{ route('index') }}" class="logo d-flex align-items-center">
                 <!-- Uncomment the line below if you also wish to use an image logo -->
                 <!-- <img src="assets/img/logo.png" alt=""> -->
-                <h1>nDeal</h1>
+                <h1 id="title_ndeal">nDeal</h1>
             </a>
 
             <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
@@ -86,7 +87,7 @@
             <div class="row gy-4">
                 <div class="col-lg-5 col-md-12 footer-info">
                 <a href="index.html" class="logo d-flex align-items-center">
-                    <span>nDeal</span>
+                    <span id="title_ndeal">nDeal</span>
                 </a>
                 <p> Vous pouvez nous contacter par les liens de nos medias sociaux que nous 
                     vous presentons ci-bas et nous ferons de notre mieux pour satisfaire à vos besoins.
@@ -101,7 +102,7 @@
                 </div>
 
                 <div class="col-lg-2 col-6 footer-links">
-                <h4>A PROPOS</h4>
+                <h4 id="apropos">A PROPOS</h4>
                 <ul>
                     <li><a href="#qui_sommes-nous">Qui sommes-nous ?</a></li>
                     <li><a href="#a_savoir">A savoir</a></li>
@@ -111,7 +112,7 @@
                 </div>
 
                 <div class="col-lg-2 col-6 footer-links">
-                <h4>LIENS</h4>
+                <h4 id="liens">LIENS</h4>
                 <ul>
                     <li><a href="index.html">Accueil</a></li>
                     <li><a href="abonnement.html">Abonnement</a></li>
@@ -122,7 +123,7 @@
                 </div>
 
                 <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
-                <h4>CONTACT Us</h4>
+                <h4 id="contact">CONTACT Us</h4>
                 <p>
                     79 Avenue de l'église <br>
                     Q/Gambela 2, C/Lubumbashi <br>

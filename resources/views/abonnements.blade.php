@@ -1,4 +1,5 @@
 @extends('base')
+@section('title', 'Abonnements')
 @section('content')
 
 <main id="main">

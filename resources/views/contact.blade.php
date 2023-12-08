@@ -1,4 +1,5 @@
 @extends('base')
+@section('title', 'Contacts')
 @section('content')
 
 <!-- contenu de la page contatc -->

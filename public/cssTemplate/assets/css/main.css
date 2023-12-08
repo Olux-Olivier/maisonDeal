@@ -1855,3 +1855,8 @@ section {
 .footer .credits a {
   color: #fff;
 }
+
+/* autres codes css */
+#title_ndeal{
+  color: orange;
+}

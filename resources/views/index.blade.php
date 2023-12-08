@@ -1,4 +1,5 @@
 @extends('base')
+@section('title', 'Accueil')
 @section('content')
 
   <!-- ======= Hero Section ======= -->

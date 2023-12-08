@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -16,7 +17,7 @@
     <!-- Style -->
     <link rel="stylesheet" href="{{ asset('cssTemplate/assets/cssC/style.css') }}">
 
-    <title>nDeal/connexion</title>
+    <title>Connexion</title>
   </head>
   <body>
   
